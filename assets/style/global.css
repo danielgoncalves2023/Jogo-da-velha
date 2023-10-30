@@ -1,0 +1,185 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    font-family: cursive, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background: #d3f7d6;
+}
+
+header h1 {
+    background: #3A4D39;
+    color: white;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+main {
+    background: #a1aaa1;
+    display: flex;
+    width: 90%;
+    gap: 80px;
+    margin: 20px auto 20px;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 10px 5px 5px rgb(121, 124, 122);}
+
+main div {
+    display: grid;
+    margin: 0 auto;
+}
+
+main section img {
+    display: flex;
+    place-items: center;
+    align-items: center;
+    width: 220px;
+}
+
+#image {
+    display: grid;
+    align-items: center;
+    margin: auto;
+}
+
+#image img {
+    filter: drop-shadow(0 0 0.75rem rgb(60, 85, 64));
+}
+
+#image h1 {
+    display: none;
+    position: absolute;
+    top: 100px;
+    background-color: rgba(198, 200, 201, 0.5);
+    backdrop-filter: blur(5px);
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    margin: 40px auto 20px;
+    width: 300px;
+    height: auto;
+}
+
+.position {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.position:hover {
+    background: rgba(21, 97, 31, 0.2);
+}
+
+.position:active {
+    background: rgba(14, 66, 21, 0.4);
+}
+
+#pos4, #pos5, #pos6 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#pos2, #pos5, #pos8 {
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+#restart {
+    display: grid;
+    align-items: center;
+}
+
+#restart button {
+    background: white;
+    color: #3A4D39;
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+#table {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+table th {
+    padding: 5px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+table td {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+table td button {
+    padding: 5px;
+    margin-top: 5px;
+    background: white;
+    font-weight: 700;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.8rem;
+}
+
+@media (max-width: 690px) {
+    main {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 20px auto 20px;
+        padding: 20px;
+    }
+
+    .position {
+        width: 100px;
+        height: 100px;
+        font-size: 1.7rem;
+    }
+
+    #restart button {
+        width: 80%;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin: 20px auto 0;
+        padding: 5px;
+    }
+
+    #image img {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    table td button {
+        padding: 5px;
+        margin-top: 5px;
+        background: white;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    footer {
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+}

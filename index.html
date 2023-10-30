@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/assets/style/global.css">
+
+    <title>Jogo da Velha</title>
+</head>
+<body>
+
+    <header>
+        <h1>Projeto - jogo da velha</h1>
+    </header>
+
+    <main>
+        <div>
+            <section id="image">
+                <img src="/assets/images/image.png" alt="jogo da velha">
+                <h1 id="avisoWin"></h1>
+            </section>
+            <section id="table">
+                <table>
+                    <tr>
+                        <th colspan="2">CONTADOR</th>
+                    </tr>
+                    <tr>
+                        <td>Vitórias do X:</td>
+                        <td id="winX">0</td>
+                    </tr>
+                    <tr>
+                        <td>Vitórias do O:</td>
+                        <td id="winO">0</td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="cleanCount()">Limpar contador</button></td>
+                    </tr>
+                </table>
+            </section>
+        </div>
+
+        <div>
+            <section id="container">
+                <div class="position" id="pos1" onclick="choose(pos1)"></div>
+                <div class="position" id="pos2" onclick="choose(pos2)"></div>
+                <div class="position" id="pos3" onclick="choose(pos3)"></div>
+                <div class="position" id="pos4" onclick="choose(pos4)"></div>
+                <div class="position" id="pos5" onclick="choose(pos5)"></div>
+                <div class="position" id="pos6" onclick="choose(pos6)"></div>
+                <div class="position" id="pos7" onclick="choose(pos7)"></div>
+                <div class="position" id="pos8" onclick="choose(pos8)"></div>
+                <div class="position" id="pos9" onclick="choose(pos9)"></div>
+            </section>
+            <section id="restart">
+                <button onclick="restart()">Reiniciar</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>Desenvolvido por Daniel Gonçalves dos Santos</footer>
+    
+    <script src="/assets/script/script.js"></script>
+</body>
+</html>
